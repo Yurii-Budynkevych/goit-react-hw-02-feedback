@@ -1,3 +1,5 @@
+import Section from './Section/Section';
+
 export const App = () => {
-  return <div></div>;
+  return <Section />;
 };
