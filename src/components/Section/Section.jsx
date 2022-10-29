@@ -24,11 +24,9 @@ class Section extends React.Component {
       100
     ).toFixed(1);
 
-    if (result === true) {
+    if (!isNaN(result)) {
       return result;
     } else {
-      console.log(result);
-      console.log(result === true);
       return 'No data about current';
     }
   };
