@@ -2,19 +2,34 @@ import './FeedbackOptions.css';
 
 const FeedbackOptions = ({ onLeaveFeedback }) => {
   return (
-    <ul>
+    <ul className="btn-list">
       <li>
-        <button type="button" name="good" onClick={onLeaveFeedback}>
+        <button
+          className="good btn"
+          type="button"
+          name="good"
+          onClick={onLeaveFeedback}
+        >
           Good
         </button>
       </li>
       <li>
-        <button type="button" name="neutral" onClick={onLeaveFeedback}>
+        <button
+          className="neutral btn"
+          type="button"
+          name="neutral"
+          onClick={onLeaveFeedback}
+        >
           Neutral
         </button>
       </li>
       <li>
-        <button type="button" name="bad" onClick={onLeaveFeedback}>
+        <button
+          className="bad btn"
+          type="button"
+          name="bad"
+          onClick={onLeaveFeedback}
+        >
           Bad
         </button>
       </li>

@@ -1,0 +1,25 @@
+.btn-list {
+    list-style: none;
+    padding: 0;
+}
+.btn-list li+li {
+    margin-top: 10px;
+}
+.btn {
+    border: 2px solid gray;
+    border-radius: 30%;
+    cursor: pointer;
+
+    padding: 8px;
+    font-size: 14px;
+}
+
+.good {
+    background-color: greenyellow;
+}
+.bad {
+    background-color: brown;
+}
+.neutral {
+    background-color: yellow;
+}

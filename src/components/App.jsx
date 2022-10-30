@@ -3,6 +3,7 @@ import Section from './Section/Section';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 import Statistics from './Statistics/Statistics';
 import Notification from './Notify/Notify';
+import { TbCoffeeOff } from 'react-icons/tb';
 
 export class App extends React.Component {
   state = {
@@ -37,7 +38,7 @@ export class App extends React.Component {
     const { good, bad, neutral } = this.state;
     const feed = this.countTotalFeedback();
     return (
-      <div>
+      <>
         <Section title="Please leave feedback">
           <FeedbackOptions onLeaveFeedback={this.feedbackCollector} />
         </Section>
@@ -52,9 +53,14 @@ export class App extends React.Component {
             />
           </Section>
         ) : (
-          <Notification message="There is no feedback" />
+          <div>
+            <TbCoffeeOff
+              style={{ fill: 'brown', display: 'inline-', width: '50px' }}
+            />
+            <Notification message="There is no feedback" />
+          </div>
         )}
-      </div>
+      </>
     );
   }
 }
